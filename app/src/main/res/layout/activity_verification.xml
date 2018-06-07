@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/txt_phone_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Verification"
+            android:textSize="18sp"
+            android:textColor="#616161"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:layout_margin="15dp"
+            android:id="@+id/img_sms"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/index"
+            android:layout_below="@id/txt_phone_verification"/>
+        <TextView
+            android:id="@+id/txtenter_the_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the verification code"
+            android:layout_below="@id/img_sms"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:textColor="#616161"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We just sent you to your phone number"
+            android:layout_below="@id/txtenter_the_verification_code"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:textColor="#616161"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ECEFF1">
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/txt_ruler1"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:text="_"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/txt_ruler2"
+            android:layout_toRightOf="@+id/txt_ruler1"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:text="_"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/txt_ruler2"
+            android:id="@+id/txt_ruler3"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:text="_"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/txt_ruler3"
+            android:id="@+id/txt_ruler4"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:text="_"/>
+        <Button
+            android:id="@+id/btt_confirm"
+            android:paddingRight="130dp"
+            android:paddingLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_ruler4"
+            android:layout_centerInParent="true"
+            android:background="@drawable/conner"
+            android:text="Confirm"
+            android:textColor="@android:color/white"/>
+    <LinearLayout
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/btt_confirm">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txt_dont_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't get the code?"
+            android:layout_below="@id/btt_confirm"/>
+
+        <TextView
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/txt_dont_get_code"
+            android:layout_below="@+id/btt_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend code"
+            android:textColor="#0277BD"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
